@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../service-cart/cart.service';
 
-//import { Product } from '../products';
+import { Product } from '../products';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +13,7 @@ export class CartComponent {
 
   constructor(private cartService: CartService) {}
 
-  //removeFromCart(product: Product) {
-  //  this.cartService.removeFromCart(product);
-  //}
+  removeFromCart(product: Product) {
+    this.cartService.removeFromCart(product);
+  }
 }
