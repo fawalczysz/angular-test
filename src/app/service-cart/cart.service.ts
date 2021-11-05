@@ -22,4 +22,11 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+
+  removeFromCart(product: Product) {
+    window.alert('test');
+    this.items.forEach((element, index) => {
+      if (element.id == product.id) delete this.items[index];
+    });
+  }
 }
